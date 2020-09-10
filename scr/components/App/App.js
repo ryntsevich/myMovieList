@@ -5,7 +5,7 @@
 
 // import combinedReducer from '../../redux/store.js';
 // import CounterButton from '../components/CounterButton';
-import MovieList from '../MovieCards.js';
+// import MovieList from '../MovieCards.js';
 import MainPage from '../../pages/MainPage.js';
 
 // let store = createStore(combinedReducer, applyMiddleware(thunk));

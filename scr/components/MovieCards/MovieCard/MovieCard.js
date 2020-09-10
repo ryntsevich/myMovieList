@@ -1,39 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 
-import  {moviesThunkAC}  from "../redux/actions/moviesAC";
+import './MovieCard.css';
 
-class MovieCard extends React.PureComponent {
+const MovieCard = props => {
+    const { title, genre, poster } = props.movie;
 
-    static propTypes = {
-        movies: PropTypes.object.isRequired
-    };
+    return (
+        <div className="movieCard__container"
+            style={{ backgroundImage: `url(${poster})` }}
+        >
 
-    componentDidMount() {
-        this.props.dispatch(moviesThunkAC(this.props.dispatch));
-    }
-
-    render() {
-        // if (this.props.movies.status <= 1)
-        //     return "загрузка...";
-
-        // if (this.props.movies.status === 2)
-        //     return "ошибка загрузки данных";
-
-        return (
-            <div></div>
-        );
-
-    }
-
+            <div className="movieCard__bottom">
+                <h3 className="movieCard__title">{title}</h3>
+                <p className="movieCard__genre">
+                    {genre}
+                </p>
+            </div>
+        </div>
+    );
 }
 
-const mapStateToProps = function (state) {
-    return {
-        movies: state.movies
-    };
+MovieCard.propTypes = {
+    movie: PropTypes.object.isRequired
 };
 
-export default connect(mapStateToProps)(MovieCard);
+export default MovieCard;
 
