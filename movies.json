@@ -53,6 +53,60 @@
             "genre": "Action / Thriller",
             "year": 2014,
             "overview": "Ex-hitman John Wick comes out of retirement to track down the gangsters that took everything from him."
+        },
+        {
+            "id": 7,
+            "poster": "https://i.ibb.co/9v9J6bz/7s.jpg",
+            "title": "Hard Kill",
+            "tagline": "Take on a madman. Save the world.",
+            "genre": "Action / Thriller",
+            "year": 2020,
+            "overview": "The work of billionaire tech CEO Donovan Chalmers is so valuable that he hires mercenaries to protect it, and a terrorist group kidnaps his daughter just to get it."
+        },
+        {
+            "id": 8,
+            "poster": "https://i.ibb.co/tcrt4pr/8s.jpg",
+            "title": "1917",
+            "tagline": "Time is the enemy",
+            "genre": "War / Drama / Action / History",
+            "year": 2020,
+            "overview": "At the height of the First World War, two young British soldiers must cross enemy territory and deliver a message that will stop a deadly attack on hundreds of soldiers."
+        },
+        {
+            "id": 9,
+            "poster": "https://i.ibb.co/71wxGyP/9s.jpg",
+            "title": "Aladdin",
+            "tagline": "Choose Wisely.",
+            "genre": "Adventure / Fantasy / Romance / Family",
+            "year": 2019,
+            "overview": "A kindhearted street urchin named Aladdin embarks on a magical adventure after finding a lamp that releases a wisecracking genie while a power-hungry Grand Vizier vies for the same lamp that has the power to make their deepest wishes come true."
+        },
+        {
+            "id": 10,
+            "poster": "https://i.ibb.co/rQF4vV4/10s.jpg",
+            "title": "Incredibles 2",
+            "tagline": "Back to work.",
+            "genre": "Action / Adventure / Animation / Family",
+            "year": 2018,
+            "overview": "Elastigirl springs into action to save the day, while Mr. Incredible faces his greatest challenge yet – taking care of the problems of his three children."
+        },
+        {
+            "id": 11,
+            "poster": "https://i.ibb.co/TLt4GMC/11s.jpg",
+            "title": "Wonder Woman",
+            "tagline": "Power. Grace. Wisdom. Wonder.",
+            "genre": "Action / Adventure / Fantasy",
+            "year": 2017,
+            "overview": "An Amazon princess comes to the world of Man in the grips of the First World War to confront the forces of evil and bring an end to human conflict."
+        },
+        {
+            "id": 12,
+            "poster": "https://i.ibb.co/MV3NLQv/12s.jpg",
+            "title": "The Gentlemen",
+            "tagline": "Criminal. Class.",
+            "genre": "Action / Crime / Comedy",
+            "year": 2020,
+            "overview": "American expat Mickey Pearson has built a highly profitable marijuana empire in London. When word gets out that he’s looking to cash out of the business forever it triggers plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him."
         }
     ]
 }

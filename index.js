@@ -6,6 +6,10 @@ import { createStore, applyMiddleware } from 'redux';
 import combinedReducer from './scr/redux/store.js';
 import thunk from 'redux-thunk';
 import { BrowserRouter } from 'react-router-dom';
+// import { Route } from 'react-router-dom';
+
+
+import './index.css';
 
 let store = createStore(combinedReducer, applyMiddleware(thunk));
 

@@ -2,28 +2,31 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import { connect } from 'react-redux';
 import MovieCard from '../MovieCards/MovieCard/MovieCard';
+import './MovieCards.css';
+import { Link } from 'react-router-dom';
 
 
-class MovieCards extends React.PureComponent {
 
-    static propTypes = {
-        movies: PropTypes.array.isRequired
-    };
+const MovieCards = ({ movies }) => {
+    let cards;
 
-
-    render() {
-
-
-        return (
-
-            <div> СПисочеккккк
-                <div>
-                    {this.props.movies.map((movie,i) => <MovieCard movie={movie} />)}
-                </div>
-            </div>
-        );
+    if (movies) {
+       cards = movies.map((m, i) => (
+            <Link key={i} to={`${'/movie/:movieId'.replace(/\:movieId/, m.id)}`}>
+                <MovieCard movie={m} />
+            </Link>
+        ));
     }
 
-}
+    return (
+        <div className="movieCards__container">
+            {cards}
+        </div>
+    );
+};
+
+MovieCards.propTypes = {
+    movies: PropTypes.array
+  };
 
 export default MovieCards;

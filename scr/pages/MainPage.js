@@ -27,7 +27,7 @@ class MainPage extends React.PureComponent {
 
 
         return (
-            <div>
+            <div className="">
                 <div>
                     <div className="searchBar-module__container">
                         searchBar
