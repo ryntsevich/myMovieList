@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import { moviesThunkAC } from "../redux/actions/moviesAC";
+
 import MovieCards from '../components/MovieCards/MovieCards';
 
 class MainPage extends React.PureComponent {
@@ -16,14 +17,11 @@ class MainPage extends React.PureComponent {
     }
 
     render() {
-
         if (this.props.movies.status <= 1)
             return "загрузка...";
 
         if (this.props.movies.status === 2)
             return "ошибка загрузки данных";
-
-        // console.log(this.props.movies.data)
 
 
         return (

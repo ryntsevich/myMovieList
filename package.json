@@ -1,11 +1,11 @@
 {
-  "name": "mymovie",
+  "name": "mymovielist",
   "version": "1.0.0",
   "description": "My Movie",
   "main": "index.js",
   "scripts": {
     "build": ".\\node_modules\\.bin\\webpack",
-    "livebuild": ".\\node_modules\\.bin\\webpack-dev-server --progress --colors"
+    "livebuild": ".\\node_modules\\.bin\\webpack-dev-server --progress --colors --history-api-fallback"
   },
   "author": "",
   "license": "ISC",
@@ -21,13 +21,13 @@
     "webpack-dev-server": "^2.9.4"
   },
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-thunk": "^2.3.0",
-    "isomorphic-fetch": "^2.2.1",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^5.2.0"
   }
 }

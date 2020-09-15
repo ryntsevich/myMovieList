@@ -3,6 +3,7 @@
         {
             "id": 1,
             "poster": "https://i.ibb.co/2dbd4c9/1s.jpg",
+            "poster_big": "https://i.ibb.co/jw5Y1KG/1.jpg",
             "title": "Rogue",
             "tagline": "When the hunter becomes the prey",
             "genre": "Action",
@@ -12,6 +13,7 @@
         {
             "id": 2,
             "poster": "https://i.ibb.co/J3HbNtp/2s.jpg",
+            "poster_big": "https://i.ibb.co/cwT6YPm/2.jpg",
             "title": "Mulan",
             "tagline": "Let's get down to business, to defeat the Huns",
             "genre": "Drama / Action / War / Fantasy / Adventure",
@@ -21,6 +23,7 @@
         {
             "id": 3,
             "poster": "https://i.ibb.co/RvST11P/3s.jpg",
+            "poster_big": "https://i.ibb.co/jb0DjSv/3.jpg",
             "title": "Joker",
             "tagline": "Put on a happy face",
             "genre": "Crime / Thriller / Drama",
@@ -30,6 +33,7 @@
         {
             "id": 4,
             "poster": "https://i.ibb.co/1n0XVZh/4s.jpg",
+            "poster_big": "https://i.ibb.co/zJPd7RH/4.jpg",
             "title": "Harry Potter and the Philosopher's Stone",
             "tagline": "Let the Magic Begin",
             "genre": "Adventure / Fantasy / Family",
@@ -39,6 +43,7 @@
         {
             "id": 5,
             "poster": "https://i.ibb.co/mCjnTcV/5s.jpg",
+            "poster_big": "https://i.ibb.co/zxfg7gr/5.jpg",
             "title": "The Dark Knight",
             "tagline": "Why So Serious?",
             "genre": "Drama / Action / Crime / Thriller",
@@ -48,6 +53,7 @@
         {
             "id": 6,
             "poster": "https://i.ibb.co/KXRx9Z6/6s.jpg",
+            "poster_big": "https://i.ibb.co/5LMnfKg/6.jpg",
             "title": "John Wick",
             "tagline": "Don't set him off",
             "genre": "Action / Thriller",
@@ -57,6 +63,7 @@
         {
             "id": 7,
             "poster": "https://i.ibb.co/9v9J6bz/7s.jpg",
+            "poster_big": "https://i.ibb.co/R97hxsv/7.jpg",
             "title": "Hard Kill",
             "tagline": "Take on a madman. Save the world.",
             "genre": "Action / Thriller",
@@ -66,6 +73,7 @@
         {
             "id": 8,
             "poster": "https://i.ibb.co/tcrt4pr/8s.jpg",
+            "poster_big": "https://i.ibb.co/hXBY8r5/8.jpg",
             "title": "1917",
             "tagline": "Time is the enemy",
             "genre": "War / Drama / Action / History",
@@ -75,6 +83,7 @@
         {
             "id": 9,
             "poster": "https://i.ibb.co/71wxGyP/9s.jpg",
+            "poster_big": "https://i.ibb.co/42NjnK2/9.jpg",
             "title": "Aladdin",
             "tagline": "Choose Wisely.",
             "genre": "Adventure / Fantasy / Romance / Family",
@@ -84,6 +93,7 @@
         {
             "id": 10,
             "poster": "https://i.ibb.co/rQF4vV4/10s.jpg",
+            "poster_big": "https://i.ibb.co/7v5rSZx/10.jpg",
             "title": "Incredibles 2",
             "tagline": "Back to work.",
             "genre": "Action / Adventure / Animation / Family",
@@ -93,6 +103,7 @@
         {
             "id": 11,
             "poster": "https://i.ibb.co/TLt4GMC/11s.jpg",
+            "poster_big": "https://i.ibb.co/jkBGszq/11.jpg",
             "title": "Wonder Woman",
             "tagline": "Power. Grace. Wisdom. Wonder.",
             "genre": "Action / Adventure / Fantasy",
@@ -102,6 +113,7 @@
         {
             "id": 12,
             "poster": "https://i.ibb.co/MV3NLQv/12s.jpg",
+            "poster_big": "https://i.ibb.co/NF3Wy6t/12.jpg",
             "title": "The Gentlemen",
             "tagline": "Criminal. Class.",
             "genre": "Action / Crime / Comedy",
