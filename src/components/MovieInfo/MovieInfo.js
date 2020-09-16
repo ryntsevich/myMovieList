@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './MovieInfo.css';
 
 export const MovieInfo = ({ movieInfo }) => {
+    console.log(movieInfo)
 
     const { title, genre, poster_big, tagline, year, overview } = movieInfo;
 
