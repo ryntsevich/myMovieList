@@ -34,6 +34,13 @@ export const setMoviesAC = (movies) => {
   };
 };
 
+export const setCurrentPageAC = (currentPage) => {
+  return {
+    type: actionTypes.SET_CURRENT_PAGE,
+    currentPage:currentPage  
+  }
+}
+
 // export const moviesThunkAC = (dispatch) => {
 //   // Как и любой action creator, countriesThunkAC должен вернуть action,
 //   // только action будет не хэш, а ФУНКЦИЯ.

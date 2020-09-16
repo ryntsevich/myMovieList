@@ -4,8 +4,8 @@
 const initState = {
   status: 0, // 0 - ничего не началось, 1 - идёт загрузка, 2 - была ошибка, 3 - данные загружены
   movies: [],
-  pageSize: 5,
-  totalMovieCount: 21,
+  pageSize: 4,
+  totalMovieCount: 12,
   currentPage: 1
 
 }
@@ -13,8 +13,10 @@ const initState = {
 const moviesReducer = (state = initState, action) => {
   switch (action.type) {
     case actionTypes.MOVIES_SET: {
-      return { ...state, movies: [...state.movies, ...action.movies] }
-
+      return { ...state, movies: action.movies }
+    }
+    case actionTypes.SET_CURRENT_PAGE: {
+      return { ...state, currentPage: action.currentPage }
     }
     default:
       return state;

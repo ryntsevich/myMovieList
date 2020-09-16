@@ -16,26 +16,45 @@ class MovieCards extends React.Component {
     };
 
     getMovies = () => {
-
-        isoFetch(`http://localhost:4000/data`, {
+        isoFetch(`http://localhost:4000/data?_limit=${this.props.pageSize}&_page=${this.props.currentPage}`, {
             method: 'get'
         })
-            .then(response => { // response - HTTP-ответ
+            .then(response => {
                 if (!response.ok)
-                    throw new Error("fetch error " + response.status); // дальше по цепочке пойдёт отвергнутый промис
+                    throw new Error("fetch error " + response.status);
                 else
-                    return response.json(); // дальше по цепочке пойдёт промис с пришедшими по сети данными
+                    return response.json();
             })
             .then(movies => {
-                // console.log(movies)
                 this.props.setMovies(movies);
-                // this.fetchSuccess(movies); // передаём полезные данные в fetchSuccess, дальше по цепочке пойдёт успешный пустой промис
             })
             .catch(error => {
                 this.fetchError(error.message);
             })
             ;
-    };
+    }
+
+    onPageChaged = (pageNumber) => {
+        this.props.setCurrentPage(pageNumber);
+        isoFetch(`http://localhost:4000/data?_limit=${this.props.pageSize}&_page=${pageNumber}`, {
+            method: 'get'
+        })
+            .then(response => {
+                if (!response.ok)
+                    throw new Error("fetch error " + response.status);
+                else
+                    return response.json();
+            })
+            .then(movies => {
+                console.log(this.props);
+                this.props.setMovies(movies);
+            })
+            .catch(error => {
+                this.fetchError(error.message);
+            })
+            ;
+    }
+
     render() {
         let cards;
 
@@ -45,9 +64,23 @@ class MovieCards extends React.Component {
             ));
         }
 
+        let pagesCount = Math.ceil(this.props.totatMovieCount / this.props.pageSize);
+
+        let pages = [];
+        for (let i = 1; i <= pagesCount; i++) {
+            pages.push(i);
+        }
+
         return (
-            <div className="movieCards__container" >
-                {cards} 
+            <div>
+                <div className="pagination__container">
+                    {pages.map((p,i) => {
+                        return <div key={i} className={this.props.currentPage === p ? "selectedTab" : "tab"} onClick={() => { this.props.currentPage != p && this.onPageChaged(p) }}>{p}</div>
+                    })}
+                </div>
+                <div className="movieCards__container" >
+                    {cards}
+                </div>
             </div>
         );
     }
