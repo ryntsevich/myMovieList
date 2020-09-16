@@ -2,6 +2,8 @@
 import MainPage from '../../pages/MainPage';
 import MoviePage from '../../pages/MoviePage';
 import { Route, Switch } from 'react-router-dom';
+import MovieCardsC from '../../containers/MovieCards/MovieCardsC';
+import MovieC from '../../containers/Movie/MovieC';
 
 class App extends React.Component {
 
@@ -12,7 +14,10 @@ class App extends React.Component {
         <h1>My Movie</h1>
         <Switch>
           <Route path='/' exact component={MainPage} />
-          <Route path='/movie/:movieId' component={MoviePage} />
+          {/* <Route path='/' exact component={MovieCardsC} /> */}
+
+
+          <Route path='/movie/:movieId' component={MovieC} />
         </Switch>
       </div>
     );

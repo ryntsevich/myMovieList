@@ -11,7 +11,7 @@
 
   .selectedTab {
     padding: 10px;
-    border: 2px solid rgb(134, 126, 126);
+    /* border: 2px solid rgb(134, 126, 126); */
     font-weight: bold;
     background-color: rgba(5, 29, 39, 0.773);
     color: white;
