@@ -8,6 +8,7 @@ import './MovieCards.css';
 class MovieCards extends React.Component {
 
     componentDidMount() {
+        console.log(this.props.match)
         this.getMovies();
     }
 

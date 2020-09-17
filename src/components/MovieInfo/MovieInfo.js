@@ -6,6 +6,7 @@ import isoFetch from 'isomorphic-fetch';
 class MovieInfo extends React.Component {
 
     componentDidMount() {
+        console.log(this.props)
         this.getMovieById(this.props.match.params.movieId);
     }
 
