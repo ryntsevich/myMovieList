@@ -2,14 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from '../MovieCards/MovieCard/MovieCard';
 import isoFetch from 'isomorphic-fetch';
+import { Link, NavLink } from 'react-router-dom';
+
 
 import './MovieCards.css';
 
 class MovieCards extends React.Component {
 
     componentDidMount() {
-        console.log(this.props.match)
-        this.getMovies();
+        // console.log(this.props)
+        // console.log(this.props.match.params.pageId)
+        // console.log(this.props.movies.length === 0)
+        // console.log(this.props.currentPage);
+        let localPage = localStorage.getItem('currentPage');
+        // console.log(localPage == 0);
+        localPage == 0 ? this.getMovies() : this.onPageChaged(localPage);
     }
 
     fetchError = (errorMessage) => {
@@ -17,7 +24,9 @@ class MovieCards extends React.Component {
     };
 
     getMovies = () => {
-        isoFetch(`http://localhost:4000/data?_limit=${this.props.pageSize}&_page=${this.props.currentPage}`, {
+        localStorage.setItem('currentPage', 0);
+
+        isoFetch(`http://localhost:4000/data`, {
             method: 'get'
         })
             .then(response => {
@@ -25,6 +34,7 @@ class MovieCards extends React.Component {
                     throw new Error("fetch error " + response.status);
                 else
                     return response.json();
+
             })
             .then(movies => {
                 this.props.setMovies(movies);
@@ -37,6 +47,9 @@ class MovieCards extends React.Component {
 
     onPageChaged = (pageNumber) => {
         this.props.setCurrentPage(pageNumber);
+        localStorage.setItem('currentPage', pageNumber);
+
+        console.log(pageNumber)
         isoFetch(`http://localhost:4000/data?_limit=${this.props.pageSize}&_page=${pageNumber}`, {
             method: 'get'
         })
@@ -71,12 +84,16 @@ class MovieCards extends React.Component {
             pages.push(i);
         }
 
+        let localPage = localStorage.getItem('currentPage');
+
         return (
             <div>
                 <div className="pagination__container">
-                    {pages.map((p,i) => {
-                        return <div key={i} className={this.props.currentPage === p ? "selectedTab" : "tab"} onClick={() => { this.props.currentPage != p && this.onPageChaged(p) }}>{p}</div>
+                    <div className={localPage == 0 ? "selectedTab" : "tab"} onClick={() => this.getMovies()}>All</div>
+                    {pages.map((p, i) => {
+                        return <div key={i} className={(this.props.currentPage === p || localPage == p) ? "selectedTab" : "tab"} onClick={() => { this.props.currentPage != p && this.onPageChaged(p) }}>{p}</div>
                     })}
+
                 </div>
                 <div className="movieCards__container" >
                     {cards}

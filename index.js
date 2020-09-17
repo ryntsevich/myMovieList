@@ -9,8 +9,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 
 import './index.css';
-
-let store = createStore(combinedReducer, applyMiddleware(thunk));
+// , applyMiddleware(thunk)
+let store = createStore(combinedReducer);
 
 ReactDOM.render(
   <Provider store={store}>
