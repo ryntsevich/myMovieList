@@ -37,7 +37,7 @@ export const setMoviesAC = (movies) => {
 export const setCurrentPageAC = (currentPage) => {
   return {
     type: actionTypes.SET_CURRENT_PAGE,
-    currentPage:currentPage  
+    currentPage: currentPage
   }
 }
 

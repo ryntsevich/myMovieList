@@ -12,7 +12,7 @@ class MovieCards extends React.Component {
     }
 
     fetchError = (errorMessage) => {
-        console.error(showStr);
+        console.error(errorMessage);
     };
 
     getMovies = () => {
@@ -46,7 +46,6 @@ class MovieCards extends React.Component {
                     return response.json();
             })
             .then(movies => {
-                console.log(this.props);
                 this.props.setMovies(movies);
             })
             .catch(error => {

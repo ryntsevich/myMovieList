@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import MovieCards from '../../components/MovieCards/MovieCards';
-import { setMoviesAC, setCurrentPageAC } from '../../redux/actions/moviesAC';
+import { setMoviesAC, setCurrentPageAC} from '../../redux/actions/moviesAC';
 
 const mapStateToProps = (state) => {
 
@@ -20,7 +20,7 @@ const mapDispatchToProps = (dispatch) => {
         },
         setCurrentPage: (pageNumber) => {
             dispatch(setCurrentPageAC(pageNumber));
-        }
+        },
     }
 }
 
