@@ -53,7 +53,7 @@ class Collection extends React.Component {
         }
 
         return (
-            <div>
+            <div className="allCollection__container">
                 <div className="buttonsCollection__container">
                     <button className="btn" onClick={() => this.getMoviesCollection("isFuture")}>Going to</button>
                     <button className="btn" onClick={() => this.getMoviesCollection("isPast")}>Watched</button>
@@ -62,9 +62,7 @@ class Collection extends React.Component {
 
                 <div className="collection__container">
                     {cards}
-
                 </div>
-                {/* <MovieCardsC /> */}
             </div>
 
         );

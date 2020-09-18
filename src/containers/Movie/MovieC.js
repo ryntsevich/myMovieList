@@ -6,7 +6,7 @@ import { setMovieAC} from '../../redux/actions/movieAC';
 
 
 const mapStateToProps = (state) => {
-    console.log(state.movieR.movie)
+    // console.log(state.movieR.movie)
     return {
         movie: state.movieR.movie,
         loading: state.movieR.loading,

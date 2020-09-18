@@ -81,6 +81,11 @@
     border: none;
   }
 
+  .movieInfo__details > .button__container > .btn:disabled {
+    background-color: rgb(209, 214, 219);
+    cursor: auto;
+    }
+
   .movieInfo__details > .button__container > .btn:hover {
     background-color: rgba(17, 41, 51, 0.773);
   }

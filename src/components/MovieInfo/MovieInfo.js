@@ -44,13 +44,10 @@ class MovieInfo extends React.Component {
         this.updateMovie(this.props.match.params.movieId, movieInfo);
     }
 
-    changePropFuture = (movieInfo, event) => {
-        console.log(event)
-        if (event.target.value == "Watched") {
-            movieInfo.isPast ? movieInfo.isPast = false : movieInfo.isPast = true;
-        } else {
-            movieInfo.isFuture ? movieInfo.isFuture = false : movieInfo.isFuture = true;
-        }
+    changePropFuture = (movieInfo) => {
+        movieInfo.isFuture ? movieInfo.isFuture = false : movieInfo.isFuture = true;
+
+        // (movieInfo.isPast ? movieInfo.isPast = false : movieInfo.isPast = true) || (movieInfo.isFuture ? movieInfo.isFuture = false : movieInfo.isFuture = true)
 
         this.updateMovie(this.props.match.params.movieId, movieInfo);
     }
@@ -71,7 +68,6 @@ class MovieInfo extends React.Component {
             body: newMovieInfo,
         })
             .then(response => {
-                console.log(response)
                 if (!response.ok)
                     throw new Error("fetch error " + response.status);
                 else
@@ -79,6 +75,7 @@ class MovieInfo extends React.Component {
             })
             .then(movie => {
                 this.getMovieById(this.props.match.params.movieId);
+                console.log(movieInfo)
             })
             .catch(error => {
                 this.fetchError(error.message);
@@ -111,8 +108,8 @@ class MovieInfo extends React.Component {
                     <p className="year">{year}</p>
                     <p className="overview">{overview}</p>
                     <div className="button__container">
-                        <input value={isPast ? "Watched" : "Going to"} type="button" className={isPast ? "selected btn" : "btn"} onClick={(event) => this.changePropFuture(movieInfo)}></input>
-                        {/* <input value="Watched" type="button" className={isPast ? "selected btn" : "btn"} onClick={() => this.changePropPast(movieInfo)}></input> */}
+                        <input value={isFuture ? "Not going to" : "Going to"} type="button" className={isFuture ? "selected btn" : "btn"} disabled={isPast || false} onClick={() => this.changePropFuture(movieInfo)}></input>
+                        <input value={isPast ? "Didn't watch" : "Watched"} type="button" className={isPast ? "selected btn" : "btn"} disabled={isFuture || false} onClick={() => this.changePropPast(movieInfo)}></input>
                         <input value={isFavourite ? "Not Favourite" : "Favourite"} type="button" className={isFavourite ? "selected btn" : "btn"} onClick={() => this.changePropFavourite(movieInfo)}></input>
                     </div>
                 </div>

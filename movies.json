@@ -21,7 +21,7 @@
       "tagline": "Let's get down to business, to defeat the Huns",
       "genre": "Drama / Action / War / Fantasy / Adventure",
       "year": 2020,
-      "isPast": false,
+      "isPast": true,
       "isFavourite": false,
       "overview": "When the Emperor of China issues a decree that one man per family must serve in the Imperial Chinese Army to defend the country from Huns, Hua Mulan, the eldest daughter of an honored warrior, steps in to take the place of her ailing father. She is spirited, determined and quick on her feet. Disguised as a man by the name of Hua Jun, she is tested every step of the way and must harness her innermost strength and embrace her true potential.",
       "isFuture": false
@@ -35,8 +35,9 @@
       "genre": "Crime / Thriller / Drama",
       "year": 2019,
       "isPast": false,
-      "isFavourite": true,
-      "overview": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure."
+      "isFavourite": false,
+      "overview": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+      "isFuture": false
     },
     {
       "id": 4,
@@ -61,7 +62,8 @@
       "year": 2008,
       "isPast": false,
       "isFavourite": true,
-      "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker."
+      "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+      "isFuture": true
     },
     {
       "id": 6,
@@ -143,7 +145,7 @@
       "tagline": "Criminal. Class.",
       "genre": "Action / Crime / Comedy",
       "year": 2020,
-      "isPast": true,
+      "isPast": false,
       "isFavourite": false,
       "overview": "American expat Mickey Pearson has built a highly profitable marijuana empire in London. When word gets out that he’s looking to cash out of the business forever it triggers plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him.",
       "isFuture": false
