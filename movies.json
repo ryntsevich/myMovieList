@@ -1,124 +1,152 @@
 {
-    "data": [
-        {
-            "id": 1,
-            "poster": "https://i.ibb.co/2dbd4c9/1s.jpg",
-            "poster_big": "https://i.ibb.co/jw5Y1KG/1.jpg",
-            "title": "Rogue",
-            "tagline": "When the hunter becomes the prey",
-            "genre": "Action",
-            "year": 2020,
-            "overview": "Battle-hardened O’Hara leads a lively mercenary team of soldiers on a daring mission: rescue hostages from their captors in remote Africa. But as the mission goes awry and the team is stranded, O’Hara’s squad must face a bloody, brutal encounter with a gang of rebels."
-        },
-        {
-            "id": 2,
-            "poster": "https://i.ibb.co/J3HbNtp/2s.jpg",
-            "poster_big": "https://i.ibb.co/cwT6YPm/2.jpg",
-            "title": "Mulan",
-            "tagline": "Let's get down to business, to defeat the Huns",
-            "genre": "Drama / Action / War / Fantasy / Adventure",
-            "year": 2020,
-            "overview": "When the Emperor of China issues a decree that one man per family must serve in the Imperial Chinese Army to defend the country from Huns, Hua Mulan, the eldest daughter of an honored warrior, steps in to take the place of her ailing father. She is spirited, determined and quick on her feet. Disguised as a man by the name of Hua Jun, she is tested every step of the way and must harness her innermost strength and embrace her true potential."
-        },
-        {
-            "id": 3,
-            "poster": "https://i.ibb.co/RvST11P/3s.jpg",
-            "poster_big": "https://i.ibb.co/jb0DjSv/3.jpg",
-            "title": "Joker",
-            "tagline": "Put on a happy face",
-            "genre": "Crime / Thriller / Drama",
-            "year": 2019,
-            "overview": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure."
-        },
-        {
-            "id": 4,
-            "poster": "https://i.ibb.co/1n0XVZh/4s.jpg",
-            "poster_big": "https://i.ibb.co/zJPd7RH/4.jpg",
-            "title": "Harry Potter and the Philosopher's Stone",
-            "tagline": "Let the Magic Begin",
-            "genre": "Adventure / Fantasy / Family",
-            "year": 2001,
-            "overview": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard -- with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths -- and about the villain who's to blame."
-        },
-        {
-            "id": 5,
-            "poster": "https://i.ibb.co/mCjnTcV/5s.jpg",
-            "poster_big": "https://i.ibb.co/zxfg7gr/5.jpg",
-            "title": "The Dark Knight",
-            "tagline": "Why So Serious?",
-            "genre": "Drama / Action / Crime / Thriller",
-            "year": 2008,
-            "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker."
-        },
-        {
-            "id": 6,
-            "poster": "https://i.ibb.co/KXRx9Z6/6s.jpg",
-            "poster_big": "https://i.ibb.co/5LMnfKg/6.jpg",
-            "title": "John Wick",
-            "tagline": "Don't set him off",
-            "genre": "Action / Thriller",
-            "year": 2014,
-            "overview": "Ex-hitman John Wick comes out of retirement to track down the gangsters that took everything from him."
-        },
-        {
-            "id": 7,
-            "poster": "https://i.ibb.co/9v9J6bz/7s.jpg",
-            "poster_big": "https://i.ibb.co/R97hxsv/7.jpg",
-            "title": "Hard Kill",
-            "tagline": "Take on a madman. Save the world.",
-            "genre": "Action / Thriller",
-            "year": 2020,
-            "overview": "The work of billionaire tech CEO Donovan Chalmers is so valuable that he hires mercenaries to protect it, and a terrorist group kidnaps his daughter just to get it."
-        },
-        {
-            "id": 8,
-            "poster": "https://i.ibb.co/tcrt4pr/8s.jpg",
-            "poster_big": "https://i.ibb.co/hXBY8r5/8.jpg",
-            "title": "1917",
-            "tagline": "Time is the enemy",
-            "genre": "War / Drama / Action / History",
-            "year": 2020,
-            "overview": "At the height of the First World War, two young British soldiers must cross enemy territory and deliver a message that will stop a deadly attack on hundreds of soldiers."
-        },
-        {
-            "id": 9,
-            "poster": "https://i.ibb.co/71wxGyP/9s.jpg",
-            "poster_big": "https://i.ibb.co/42NjnK2/9.jpg",
-            "title": "Aladdin",
-            "tagline": "Choose Wisely.",
-            "genre": "Adventure / Fantasy / Romance / Family",
-            "year": 2019,
-            "overview": "A kindhearted street urchin named Aladdin embarks on a magical adventure after finding a lamp that releases a wisecracking genie while a power-hungry Grand Vizier vies for the same lamp that has the power to make their deepest wishes come true."
-        },
-        {
-            "id": 10,
-            "poster": "https://i.ibb.co/rQF4vV4/10s.jpg",
-            "poster_big": "https://i.ibb.co/7v5rSZx/10.jpg",
-            "title": "Incredibles 2",
-            "tagline": "Back to work.",
-            "genre": "Action / Adventure / Animation / Family",
-            "year": 2018,
-            "overview": "Elastigirl springs into action to save the day, while Mr. Incredible faces his greatest challenge yet – taking care of the problems of his three children."
-        },
-        {
-            "id": 11,
-            "poster": "https://i.ibb.co/TLt4GMC/11s.jpg",
-            "poster_big": "https://i.ibb.co/jkBGszq/11.jpg",
-            "title": "Wonder Woman",
-            "tagline": "Power. Grace. Wisdom. Wonder.",
-            "genre": "Action / Adventure / Fantasy",
-            "year": 2017,
-            "overview": "An Amazon princess comes to the world of Man in the grips of the First World War to confront the forces of evil and bring an end to human conflict."
-        },
-        {
-            "id": 12,
-            "poster": "https://i.ibb.co/MV3NLQv/12s.jpg",
-            "poster_big": "https://i.ibb.co/NF3Wy6t/12.jpg",
-            "title": "The Gentlemen",
-            "tagline": "Criminal. Class.",
-            "genre": "Action / Crime / Comedy",
-            "year": 2020,
-            "overview": "American expat Mickey Pearson has built a highly profitable marijuana empire in London. When word gets out that he’s looking to cash out of the business forever it triggers plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him."
-        }
-    ]
+  "data": [
+    {
+      "id": 1,
+      "poster": "https://i.ibb.co/2dbd4c9/1s.jpg",
+      "poster_big": "https://i.ibb.co/jw5Y1KG/1.jpg",
+      "title": "Rogue",
+      "tagline": "When the hunter becomes the prey",
+      "genre": "Action",
+      "year": 2020,
+      "isFavourite": false,
+      "overview": "Battle-hardened O’Hara leads a lively mercenary team of soldiers on a daring mission: rescue hostages from their captors in remote Africa. But as the mission goes awry and the team is stranded, O’Hara’s squad must face a bloody, brutal encounter with a gang of rebels.",
+      "isFuture": true,
+      "isPast": true
+    },
+    {
+      "id": 2,
+      "poster": "https://i.ibb.co/J3HbNtp/2s.jpg",
+      "poster_big": "https://i.ibb.co/cwT6YPm/2.jpg",
+      "title": "Mulan",
+      "tagline": "Let's get down to business, to defeat the Huns",
+      "genre": "Drama / Action / War / Fantasy / Adventure",
+      "year": 2020,
+      "isPast": false,
+      "isFavourite": false,
+      "overview": "When the Emperor of China issues a decree that one man per family must serve in the Imperial Chinese Army to defend the country from Huns, Hua Mulan, the eldest daughter of an honored warrior, steps in to take the place of her ailing father. She is spirited, determined and quick on her feet. Disguised as a man by the name of Hua Jun, she is tested every step of the way and must harness her innermost strength and embrace her true potential.",
+      "isFuture": false
+    },
+    {
+      "id": 3,
+      "poster": "https://i.ibb.co/RvST11P/3s.jpg",
+      "poster_big": "https://i.ibb.co/jb0DjSv/3.jpg",
+      "title": "Joker",
+      "tagline": "Put on a happy face",
+      "genre": "Crime / Thriller / Drama",
+      "year": 2019,
+      "isPast": false,
+      "isFavourite": true,
+      "overview": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure."
+    },
+    {
+      "id": 4,
+      "poster": "https://i.ibb.co/1n0XVZh/4s.jpg",
+      "poster_big": "https://i.ibb.co/zJPd7RH/4.jpg",
+      "title": "Harry Potter and the Philosopher's Stone",
+      "tagline": "Let the Magic Begin",
+      "genre": "Adventure / Fantasy / Family",
+      "year": 2001,
+      "isPast": false,
+      "isFavourite": false,
+      "overview": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard -- with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths -- and about the villain who's to blame.",
+      "isFuture": true
+    },
+    {
+      "id": 5,
+      "poster": "https://i.ibb.co/mCjnTcV/5s.jpg",
+      "poster_big": "https://i.ibb.co/zxfg7gr/5.jpg",
+      "title": "The Dark Knight",
+      "tagline": "Why So Serious?",
+      "genre": "Drama / Action / Crime / Thriller",
+      "year": 2008,
+      "isPast": false,
+      "isFavourite": true,
+      "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker."
+    },
+    {
+      "id": 6,
+      "poster": "https://i.ibb.co/KXRx9Z6/6s.jpg",
+      "poster_big": "https://i.ibb.co/5LMnfKg/6.jpg",
+      "title": "John Wick",
+      "tagline": "Don't set him off",
+      "genre": "Action / Thriller",
+      "year": 2014,
+      "isPast": false,
+      "isFavourite": false,
+      "overview": "Ex-hitman John Wick comes out of retirement to track down the gangsters that took everything from him."
+    },
+    {
+      "id": 7,
+      "poster": "https://i.ibb.co/9v9J6bz/7s.jpg",
+      "poster_big": "https://i.ibb.co/R97hxsv/7.jpg",
+      "title": "Hard Kill",
+      "tagline": "Take on a madman. Save the world.",
+      "genre": "Action / Thriller",
+      "year": 2020,
+      "isPast": false,
+      "isFavourite": false,
+      "overview": "The work of billionaire tech CEO Donovan Chalmers is so valuable that he hires mercenaries to protect it, and a terrorist group kidnaps his daughter just to get it."
+    },
+    {
+      "id": 8,
+      "poster": "https://i.ibb.co/tcrt4pr/8s.jpg",
+      "poster_big": "https://i.ibb.co/hXBY8r5/8.jpg",
+      "title": "1917",
+      "tagline": "Time is the enemy",
+      "genre": "War / Drama / Action / History",
+      "year": 2020,
+      "isPast": false,
+      "isFavourite": false,
+      "overview": "At the height of the First World War, two young British soldiers must cross enemy territory and deliver a message that will stop a deadly attack on hundreds of soldiers."
+    },
+    {
+      "id": 9,
+      "poster": "https://i.ibb.co/71wxGyP/9s.jpg",
+      "poster_big": "https://i.ibb.co/42NjnK2/9.jpg",
+      "title": "Aladdin",
+      "tagline": "Choose Wisely.",
+      "genre": "Adventure / Fantasy / Romance / Family",
+      "year": 2019,
+      "isPast": true,
+      "isFavourite": false,
+      "overview": "A kindhearted street urchin named Aladdin embarks on a magical adventure after finding a lamp that releases a wisecracking genie while a power-hungry Grand Vizier vies for the same lamp that has the power to make their deepest wishes come true."
+    },
+    {
+      "id": 10,
+      "poster": "https://i.ibb.co/rQF4vV4/10s.jpg",
+      "poster_big": "https://i.ibb.co/7v5rSZx/10.jpg",
+      "title": "Incredibles 2",
+      "tagline": "Back to work.",
+      "genre": "Action / Adventure / Animation / Family",
+      "year": 2018,
+      "isPast": false,
+      "isFavourite": false,
+      "overview": "Elastigirl springs into action to save the day, while Mr. Incredible faces his greatest challenge yet – taking care of the problems of his three children."
+    },
+    {
+      "id": 11,
+      "poster": "https://i.ibb.co/TLt4GMC/11s.jpg",
+      "poster_big": "https://i.ibb.co/jkBGszq/11.jpg",
+      "title": "Wonder Woman",
+      "tagline": "Power. Grace. Wisdom. Wonder.",
+      "genre": "Action / Adventure / Fantasy",
+      "year": 2017,
+      "isPast": true,
+      "isFavourite": false,
+      "overview": "An Amazon princess comes to the world of Man in the grips of the First World War to confront the forces of evil and bring an end to human conflict."
+    },
+    {
+      "id": 12,
+      "poster": "https://i.ibb.co/MV3NLQv/12s.jpg",
+      "poster_big": "https://i.ibb.co/NF3Wy6t/12.jpg",
+      "title": "The Gentlemen",
+      "tagline": "Criminal. Class.",
+      "genre": "Action / Crime / Comedy",
+      "year": 2020,
+      "isPast": true,
+      "isFavourite": false,
+      "overview": "American expat Mickey Pearson has built a highly profitable marijuana empire in London. When word gets out that he’s looking to cash out of the business forever it triggers plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him.",
+      "isFuture": false
+    }
+  ]
 }

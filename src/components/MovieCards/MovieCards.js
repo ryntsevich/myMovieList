@@ -49,7 +49,7 @@ class MovieCards extends React.Component {
         this.props.setCurrentPage(pageNumber);
         localStorage.setItem('currentPage', pageNumber);
 
-        console.log(pageNumber)
+        // console.log(pageNumber)
         isoFetch(`http://localhost:4000/data?_limit=${this.props.pageSize}&_page=${pageNumber}`, {
             method: 'get'
         })

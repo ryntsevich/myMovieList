@@ -1,10 +1,12 @@
 /** MOVIES(PAGINATION) [START] */
 export const MOVIES_SET = 'MOVIES_SET';
 export const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
+export const SEARCH_MOVIES ='SEARCH_MOVIES';
 /** MOVIES [END] */
 
 /** MOVIE [START] */
 export const MOVIE_SET = 'MOVIE_SET';
+export const CHANGE_ISFAVOURITE ='CHANGE_ISFAVOURITE';
 /** MOVIE [END] */
 
 

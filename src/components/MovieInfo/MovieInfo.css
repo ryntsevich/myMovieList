@@ -85,3 +85,7 @@
     background-color: rgba(17, 41, 51, 0.773);
   }
   
+
+  .movieInfo__details > .button__container > .selected {
+    background-color: red;
+  }

@@ -2,8 +2,9 @@ import * as actionTypes from '../actions/actionTypes';
 
 
 const initState = {
-    loading: false, 
-    movie: []
+    loading: false,
+    movie: [],
+    isFavourite: null
 }
 
 const movieReducer = (state = initState, action) => {

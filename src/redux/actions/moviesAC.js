@@ -38,8 +38,18 @@ export const setCurrentPageAC = (currentPage) => {
   return {
     type: actionTypes.SET_CURRENT_PAGE,
     currentPage: currentPage
-  }
-}
+  };
+};
+
+
+
+
+// export const searchMoviesAC = (data) => {
+//   return {
+//     type: actionTypes.SEARCH_MOVIES,
+//     payload: data
+//   }
+// }
 
 // export const moviesThunkAC = (dispatch) => {
 //   // Как и любой action creator, countriesThunkAC должен вернуть action,

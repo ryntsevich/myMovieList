@@ -1,5 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { searchMoviesAC, setMoviesAC } from '../../redux/actions/moviesAC';
+
 // import { connect } from 'react-redux';
 // import { withRouter } from 'react-router-dom';
 // import PropTypes from 'prop-types';
@@ -14,43 +16,70 @@ import SearchBar from '../../components/Search/SearchBar';
 // import withPaginated from '../../hoc/withPaginated/withPaginated';
 
 class Search extends React.Component {
+
+    componentDidMount() {
+        // console.log(this.props)
+        // this.inputRef.current.focus();
+    }
+
     state = {
         query: '',
         showOverlay: false,
-        results: null
+        results: null,
+        list: this.props.movies,
         // pathname: this.props.location.pathname,
         // page: 1,
     };
 
-    onInputChangeHandler = event => {
-        this.setState({ query: event.target.value }, this.updateList);
+
+    onInputChangeHandler = (value) => {
+        console.log(value)
+        // this.setState({ query: event.target.value }, this.updateList);
     };
+    // setNewTextRef = (ref) => {
+    //     this.newTextRef=ref;
+    //   };
+    
+    //   setNewText = () => {
+    //     if ( this.newTextRef ) { // всегда проверяем - мало ли метод вызовется когда DOM-элемента уже нет или ещё нет?
+    //       let newText=this.newTextRef.value;
+    //       this.setState({question:newText});
+    //     }
+    //   };
 
     updateList = () => {
-        let updetedList = this.props.movies.data.slice();
+        let updatedList = this.props.movies.slice();
         // console.log(updetedList)
         if (this.state.query) {
+            console.log(this.state.query)
             let state = this.state.query.toLowerCase();
-            console.log(this.props.updateMovies)
-            updetedList = updetedList.filter(item => {
-                return item.title.toLowerCase().indexOf(state) !== -1;
+            // console.log(this.props.updateMovies)
+            updatedList = updatedList.filter(item => {
+                return item.title.includes(state);
             });
             // console.log(updetedList)
+            // console.log(this.props.setMovies(updatedList))
+            this.props.setMovies(updatedList)
         }
 
-        // this.setState({ list: updetedList });
+        // this.props.setMovies(this.state.query)
+
+        // this.setState({ list: updatedList });
+        // console.log(this.state.list)
     };
 
 
 
     render() {
+        // console.log(this.state)
 
 
         return (
             <div>
                 <SearchBar
                     value={this.state.query}
-                    onChange={this.onInputChangeHandler}
+                    cbSearch={this.onInputChangeHandler}
+
                 //   loading={!!this.props.loading && !!this.state.showOverlay}
                 />
                 {/* {this.state.showOverlay ? <Overlay>{results}</Overlay> : null} */}
@@ -59,15 +88,25 @@ class Search extends React.Component {
     }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
     return {
-        movies: state.movies,
-        updateMovies: state.updateList
+        movies: state.moviesR.movies
     };
 };
 
+const mapDispatchToProps = (dispatch) => {
+    return {
+        setMovies: (movies) => {
+            dispatch(setMoviesAC(movies));
+        }
+        // searchMovies: (data) => {
+        //     dispatch(searchMoviesAC(data));
+        // }
+    }
+}
+
 // export default Search;
-export default connect(mapStateToProps)(Search);
+export default connect(mapStateToProps, mapDispatchToProps)(Search);
 
 
 // import React, { Component } from 'react';

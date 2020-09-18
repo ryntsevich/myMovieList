@@ -19,7 +19,7 @@ class MainPage extends React.Component {
 
         return (
             <div className="">
-                <Search />
+                {/* <Search /> */}
                 <MovieCardsC />
             </div>
         );

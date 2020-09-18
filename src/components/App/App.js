@@ -15,8 +15,8 @@ class App extends React.Component {
         <h1>My Movie</h1>
         <NavLink to='/collection'> <div>My collection</div> </NavLink>
         <Switch>
-          <Route path='/' exact component={MovieCardsC} />
-          <Route path='/movies' component={MovieCardsC} />
+          <Route path='/' exact component={MainPage} />
+          <Route path='/movies' component={MainPage} />
           {/* <Route path='/movies/:pageId' component={MovieCardsC} /> */}
           {/* <Route path='/movie' component={MovieC} /> */}
           <Route path='/movie/:movieId' component={MovieC} />

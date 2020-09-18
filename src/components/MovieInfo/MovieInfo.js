@@ -5,8 +5,13 @@ import isoFetch from 'isomorphic-fetch';
 
 class MovieInfo extends React.Component {
 
+
+    state = {
+        isFavourite: false
+    }
+
     componentDidMount() {
-        console.log(this.props)
+        // console.log(this.props)
         this.getMovieById(this.props.match.params.movieId);
     }
 
@@ -30,8 +35,56 @@ class MovieInfo extends React.Component {
     }
 
     fetchError = (errorMessage) => {
-        console.error(showStr);
-    };
+        console.error(errorMessage);
+    }
+
+    changePropFavourite = (movieInfo) => {
+
+        movieInfo.isFavourite ? movieInfo.isFavourite = false : movieInfo.isFavourite = true;
+        this.updateMovie(this.props.match.params.movieId, movieInfo);
+    }
+
+    changePropFuture = (movieInfo, event) => {
+        console.log(event)
+        if (event.target.value == "Watched") {
+            movieInfo.isPast ? movieInfo.isPast = false : movieInfo.isPast = true;
+        } else {
+            movieInfo.isFuture ? movieInfo.isFuture = false : movieInfo.isFuture = true;
+        }
+
+        this.updateMovie(this.props.match.params.movieId, movieInfo);
+    }
+
+    changePropPast = (movieInfo) => {
+        movieInfo.isPast ? movieInfo.isPast = false : movieInfo.isPast = true;
+        this.updateMovie(this.props.match.params.movieId, movieInfo);
+    }
+
+    updateMovie = (id, movieInfo) => {
+        let newMovieInfo = JSON.stringify(movieInfo)
+
+        isoFetch(`http://localhost:4000/data/${id}`, {
+            method: 'PUT',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: newMovieInfo,
+        })
+            .then(response => {
+                console.log(response)
+                if (!response.ok)
+                    throw new Error("fetch error " + response.status);
+                else
+                    return response;
+            })
+            .then(movie => {
+                this.getMovieById(this.props.match.params.movieId);
+            })
+            .catch(error => {
+                this.fetchError(error.message);
+            })
+            ;
+    }
 
     render() {
 
@@ -40,8 +93,7 @@ class MovieInfo extends React.Component {
 
         let movieInfo = this.props.movie[0];
 
-        const { title, genre, poster_big, tagline, year, overview } = movieInfo;
-
+        const { title, genre, poster_big, tagline, year, overview, isFavourite, isFuture, isPast } = movieInfo;
 
         return (
             <div className="movieInfo__container"
@@ -59,9 +111,9 @@ class MovieInfo extends React.Component {
                     <p className="year">{year}</p>
                     <p className="overview">{overview}</p>
                     <div className="button__container">
-                        <button className="btn">Going to</button>
-                        <button className="btn">Watched</button>
-                        <button className="btn">Favourite</button>
+                        <input value={isPast ? "Watched" : "Going to"} type="button" className={isPast ? "selected btn" : "btn"} onClick={(event) => this.changePropFuture(movieInfo)}></input>
+                        {/* <input value="Watched" type="button" className={isPast ? "selected btn" : "btn"} onClick={() => this.changePropPast(movieInfo)}></input> */}
+                        <input value={isFavourite ? "Not Favourite" : "Favourite"} type="button" className={isFavourite ? "selected btn" : "btn"} onClick={() => this.changePropFavourite(movieInfo)}></input>
                     </div>
                 </div>
 
