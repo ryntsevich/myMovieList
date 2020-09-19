@@ -9,7 +9,6 @@ export const SEARCH ='SEARCH';
 
 /** MOVIE [START] */
 export const MOVIE_SET = 'MOVIE_SET';
-export const CHANGE_ISFAVOURITE ='CHANGE_ISFAVOURITE';
 /** MOVIE [END] */
 
 

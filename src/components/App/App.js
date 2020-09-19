@@ -1,11 +1,8 @@
 ﻿import React from 'react';
 import MainPage from '../../pages/MainPage';
-import MoviePage from '../../pages/MoviePage';
-import { Route, Switch, NavLink } from 'react-router-dom';
-import MovieCardsC from '../../containers/MovieCards/MovieCardsC';
+import { Route, Switch} from 'react-router-dom';
 import MovieC from '../../containers/Movie/MovieC';
 import CollecttionPage from '../../pages/CollectionPage';
-import Profile from '../../components/Profile/Profile';
 import PagesLinks from '../../pages/PagesLinks';
 
 class App extends React.Component {

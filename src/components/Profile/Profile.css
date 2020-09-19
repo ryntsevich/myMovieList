@@ -25,8 +25,6 @@
   }
   
   .profile__img {
-    /* border-radius: 20px; */
-    /* overflow: hidden; */
     margin-left: 55px;
     text-align: center;
     display: flex;
@@ -42,7 +40,6 @@
   }
   
   .profile__details > .city {
-    /* font-style: italic; */
     font-size: 20px;
     margin-left: 10px;
     margin-top: 10px;
@@ -61,11 +58,4 @@
     align-self: flex-start;
     color: #333333;
   }
-  
-  /* .movieInfo__details > .overview {
-    padding-top: 20px;
-    margin-bottom: 50px;
-  } */
-
-  
   

@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './src/components/App/App';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import { createStore } from 'redux';
 import combinedReducer from './src/redux/store.js';
-import thunk from 'redux-thunk';
 import { BrowserRouter } from 'react-router-dom';
 
 

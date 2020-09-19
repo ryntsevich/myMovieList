@@ -94,3 +94,30 @@
   .movieInfo__details > .button__container > .selected {
     background-color: red;
   }
+
+  @media all and (max-width: 800px) {
+    .movieInfo__details > .button__container {
+      flex-flow: column nowrap;
+      align-items: stretch;
+      height: auto;
+  }
+  .movieInfo__details > .button__container > .btn {
+    width: 100%;
+  }
+  }
+
+  @media all and (max-width: 450px) {
+    .movieInfo__poster {
+      display: none;
+    }
+    .movieInfo__details > .button__container {
+      flex-flow: column nowrap;
+      align-items: stretch;
+      height: auto;
+  }
+  .movieInfo__details > .button__container > .btn {
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+  }
+}

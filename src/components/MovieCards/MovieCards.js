@@ -1,17 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import MovieCard from '../MovieCards/MovieCard/MovieCard';
-import isoFetch from 'isomorphic-fetch';
-import { Link, NavLink } from 'react-router-dom';
-
-
+import { NavLink } from 'react-router-dom';
 import './MovieCards.css';
 import Spinner from '../Spinner/Spinner';
 
-
-let MovieCards = (props) => {
-
-    // console.log(props)
+const MovieCards = (props) => {
 
     let cards = <Spinner />;
 
@@ -33,17 +26,13 @@ let MovieCards = (props) => {
     return (
         <div>
             <div className="pagination__container">
-                {/* <NavLink to="/movies" className={localPage == 0 ? "selectedTab" : "tab"} onClick={() => props.cbGetMovies()}>All</NavLink> */}
                 {pages.map((p, i) => {
-                    return <NavLink to={`/movies?page=${i}`} 
-                    // activeClassName="selectedTab"
+                    return <NavLink to={`/movies?page=${i}`}
                         key={i}
-                        // className="tab"
                         className={(props.currentPage === i || localPage == p) ? "selectedTab" : "tab"}
                         onClick={() => { p === "All" ? props.cbGetMovies() : props.cbOnPageChanged(i) }}
                     >{p}</NavLink>
                 })}
-
             </div>
             <div className="movieCards__container" >
                 {cards}

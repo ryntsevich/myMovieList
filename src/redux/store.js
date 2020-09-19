@@ -5,8 +5,7 @@ import moviesReducer from "./reducers/moviesR";
 
 let combinedReducer = combineReducers({
     moviesR: moviesReducer,
-    movieR: movieReducer// редьюсер moviesReducer отвечает за раздел state под именем movies
-    // + другие редьюсеры
+    movieR: movieReducer
 });
 
 export default combinedReducer;

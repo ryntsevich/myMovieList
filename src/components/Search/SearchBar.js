@@ -1,10 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-// import { LANDING } from '../../constants/routes';
-import PropTypes from 'prop-types';
-
 import './SearchBar.css';
-// import Spinner from '../Spinner/Spinner';
 
 class SearchBar extends React.Component {
     constructor(props) {
@@ -19,10 +14,8 @@ class SearchBar extends React.Component {
     search = () => { 
         let str = this.inputRef.current.value;
         this.inputRef.current.value = '';
-        // this.props.dispatch( bookSearch(str) );
         this.props.search(str);
         this.props.searchMovies(str)
-        console.log(this.props)
     }
 
     render() {

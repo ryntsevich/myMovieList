@@ -1,10 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import MovieInfo from '../../components/MovieInfo/MovieInfo';
-// import { setMovieAC } from '../../redux/actions/movieAC';
 import { setMoviesAC, setCurrentTitleAC } from '../../redux/actions/moviesAC';
-import Profile from '../../components/Profile/Profile'
-import Collection from '../../components/Collection/Collection';
 import Button from '../../components/Button/Button'
 
 
@@ -30,5 +26,3 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Button);
-
-// export default CollectionC;

@@ -5,7 +5,6 @@ background-color: rgba(0, 91, 128, 0.773);
 margin: 0;
 margin-bottom: 20px;
 text-decoration: none;
-/* font-weight: bold; */
 font-size: 18px;
 text-align: center;
 
@@ -16,7 +15,6 @@ text-align: center;
     text-decoration: none;
     margin: 0;
     position: relative;
-    /* overflow: hidden; */
 }
 
 .PageLink {

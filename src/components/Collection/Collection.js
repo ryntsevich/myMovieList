@@ -1,13 +1,9 @@
 import React from 'react';
-import MovieCardsC from '../../containers/MovieCards/MovieCardsC';
 import isoFetch from 'isomorphic-fetch';
 import MovieCard from '../MovieCards/MovieCard/MovieCard'
-
 import './Collection.css';
-import Button from '../Button/Button';
 import ButtonC from '../../containers/Button/ButtonC';
 import Spinner from '../Spinner/Spinner';
-
 
 
 class Collection extends React.Component {
@@ -15,7 +11,6 @@ class Collection extends React.Component {
     state = {
         selectedId: 0,
         currentValue: null
-
     }
 
     componentDidMount() {
@@ -36,7 +31,6 @@ class Collection extends React.Component {
             })
             .then(movies => {
                 this.props.setMovies(movies);
-                // console.log(movies)
             })
             .catch(error => {
                 this.fetchError(error.message);
@@ -50,12 +44,6 @@ class Collection extends React.Component {
 
     selectedButton = (id, value) => {
         this.setState({ selectedId: id });
-        // this.setState({ currentValue: id});
-        // console.log(this.state.selectedId)
-        // console.log(this.state.currentValue)
-        // console.log(this.props)
-
-        // this.state.selectedId == 1 && this.getMoviesCollection('isPast')
     }
 
     render() {
@@ -81,10 +69,7 @@ class Collection extends React.Component {
                     {cards}
                 </div>
             </div>
-
         );
-
-
     }
 
 }

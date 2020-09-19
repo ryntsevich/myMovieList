@@ -12,7 +12,6 @@ import './Profile.css';
                 <h1 className="name">DeCaprio</h1>
                 <p className="city">Minsk</p>
                 <p className="gender">Man, 30</p>
-                {/* <p className="age">30</p> */}
             </div>
         </div>
 

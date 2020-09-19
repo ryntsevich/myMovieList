@@ -1,19 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './MovieInfo.css';
 import isoFetch from 'isomorphic-fetch';
-import Button from '../Button/Button';
 import Spinner from '../Spinner/Spinner';
 
 class MovieInfo extends React.Component {
 
-
-    state = {
-        isFavourite: false
-    }
-
     componentDidMount() {
-        // console.log(this.props)
         this.getMovieById(this.props.match.params.movieId);
     }
 
@@ -47,14 +39,13 @@ class MovieInfo extends React.Component {
     }
 
     changePropFuture = (movieInfo) => {
+
         movieInfo.isFuture ? movieInfo.isFuture = false : movieInfo.isFuture = true;
-
-        // (movieInfo.isPast ? movieInfo.isPast = false : movieInfo.isPast = true) || (movieInfo.isFuture ? movieInfo.isFuture = false : movieInfo.isFuture = true)
-
         this.updateMovie(this.props.match.params.movieId, movieInfo);
     }
 
     changePropPast = (movieInfo) => {
+
         movieInfo.isPast ? movieInfo.isPast = false : movieInfo.isPast = true;
         this.updateMovie(this.props.match.params.movieId, movieInfo);
     }
@@ -77,7 +68,6 @@ class MovieInfo extends React.Component {
             })
             .then(movie => {
                 this.getMovieById(this.props.match.params.movieId);
-                console.log(movieInfo)
             })
             .catch(error => {
                 this.fetchError(error.message);
@@ -87,8 +77,9 @@ class MovieInfo extends React.Component {
 
     render() {
 
+        console.log(this.props.loading)
+
         if (!this.props.loading)
-            // return "загрузка данных...";
             return <Spinner />
 
         let movieInfo = this.props.movie[0];
@@ -97,9 +88,6 @@ class MovieInfo extends React.Component {
 
         return (
             <div className="movieInfo__container"
-            //   style={{
-            //     backgroundImage: `url(${BASE_IMAGE_URL}/w1280/${movie.backdrop_path})`,
-            //   }}
             >
                 <div className="movieInfo__poster">
                     <img src={poster_big} alt="" />
@@ -116,7 +104,6 @@ class MovieInfo extends React.Component {
                         <input value={isFavourite ? "Not Favourite" : "Favourite"} type="button" className={isFavourite ? "selected btn" : "btn"} onClick={() => this.changePropFavourite(movieInfo)}></input>
                     </div>
                 </div>
-
             </div>
         );
     };
