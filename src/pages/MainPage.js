@@ -16,10 +16,12 @@ import MovieCardsC from '../containers/MovieCards/MovieCardsC';
 class MainPage extends React.Component {
 
     render() {
+        let localPage = localStorage.getItem('currentPage');
+        // console.log(localPage)
 
         return (
             <div className="">
-                {/* <Search /> */}
+                {localPage == 0 && <Search />}
                 <MovieCardsC />
             </div>
         );

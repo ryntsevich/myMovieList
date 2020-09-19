@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import MovieCards from '../../components/MovieCards/MovieCards';
+import MovieCardsAPIC from '../MovieCards/MoviesCardsAPIC';
 import { setMoviesAC, setCurrentPageAC} from '../../redux/actions/moviesAC';
 import { withRouter } from 'react-router-dom';
 
@@ -26,4 +26,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(MovieCards));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(MovieCardsAPIC));

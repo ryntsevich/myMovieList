@@ -5,6 +5,7 @@ import { Route, Switch, NavLink } from 'react-router-dom';
 import MovieCardsC from '../../containers/MovieCards/MovieCardsC';
 import MovieC from '../../containers/Movie/MovieC';
 import CollecttionPage from '../../pages/CollectionPage';
+import Profile from '../../components/Profile/Profile';
 
 class App extends React.Component {
 
@@ -17,10 +18,11 @@ class App extends React.Component {
         <Switch>
           <Route path='/' exact component={MainPage} />
           <Route path='/movies' component={MainPage} />
+          {/* <Route path='/movies?page=2' exact component={MainPage} /> */}
           {/* <Route path='/movies/:pageId' component={MovieCardsC} /> */}
           {/* <Route path='/movie' component={MovieC} /> */}
-          <Route path='/movie/:movieId' component={MovieC} />
           <Route path='/collection' component={CollecttionPage} />
+          <Route path='/movie/:movieId' component={MovieC} />
         </Switch>
       </div>
     );

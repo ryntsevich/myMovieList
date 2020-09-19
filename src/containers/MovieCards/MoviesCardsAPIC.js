@@ -8,7 +8,7 @@ import { Link, NavLink } from 'react-router-dom';
 import './MovieCards.css';
 import Spinner from '../Spinner/Spinner';
 
-class MovieCards extends React.Component {
+class MovieCardsAPIC extends React.Component {
 
 
     componentDidMount() {
@@ -111,5 +111,5 @@ class MovieCards extends React.Component {
     }
 };
 
-export default MovieCards;
+export default MovieCardsAPIC;
 

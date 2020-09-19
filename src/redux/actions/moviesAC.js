@@ -48,6 +48,22 @@ export const setCurrentTitleAC = (title) => {
   };
 };
 
+export const searchAC = (str) => {
+  return {
+    type: 'SEARCH',
+    payload: str
+  }
+};
+
+export const searchMoviesAC = (str) => {
+  return {
+    type: 'CHANGE_MOVIES_SEARCH',
+    str
+  }
+};
+
+
+
 
 
 // export const searchMoviesAC = (data) => {

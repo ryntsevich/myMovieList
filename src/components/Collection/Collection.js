@@ -6,6 +6,7 @@ import MovieCard from '../MovieCards/MovieCard/MovieCard'
 import './Collection.css';
 import Button from '../Button/Button';
 import ButtonC from '../../containers/Button/ButtonC';
+import Spinner from '../Spinner/Spinner';
 
 
 
@@ -59,7 +60,7 @@ class Collection extends React.Component {
 
     render() {
 
-        let cards;
+        let cards = <Spinner />;
 
         if (this.props.movies) {
             cards = this.props.movies.map((m) => (
@@ -68,7 +69,6 @@ class Collection extends React.Component {
         }
 
         let buttons = ["Going to", "Watched", "Favourite"];
-        // let ref = null;
 
 
         return (

@@ -1,47 +1,38 @@
-// import React from 'react';
-// // import { Link } from 'react-router-dom';
-// // import { LANDING } from '../../constants/routes';
-// import PropTypes from 'prop-types';
+import React from 'react';
+// import { Link } from 'react-router-dom';
+// import { LANDING } from '../../constants/routes';
+import PropTypes from 'prop-types';
 
-// import './SearchBar.css';
-// // import Spinner from '../Spinner/Spinner';
+import './SearchBar.css';
+// import Spinner from '../Spinner/Spinner';
 
-// class SearchBar extends React.Component {
-//   // const { onClick, value, setValue } = props;
+class SearchBar extends React.Component {
+    constructor(props) {
+        super(props);    
+        this.inputRef = React.createRef();
+      }
 
-//   // console.log(props)
-//   // let newValue = null;
+      componentDidMount() {
+        this.inputRef.current.focus();
+    }
 
-//   state = {
-//     value: this.props.value
-//   };
+    search = () => { 
+        let str = this.inputRef.current.value;
+        this.inputRef.current.value = '';
+        // this.props.dispatch( bookSearch(str) );
+        this.props.search(str);
+        this.props.searchMovies(str)
+        console.log(this.props)
+    }
 
-//   changeInputValue = (event) => {
-//     // this.props.cbIsChange();
-//     if (event.target.value.trim()) {
-//       this.setState({ value: event.target.value });
-//       console.log(this.state.value)
-//     };
+    render() {
+        return (
+            <div className="searchBar__container">
+                <input className="searchBar__input" type="text" ref={this.inputRef} placeholder="Search..." />
+                <input className="searchBar__button" type="button" value="Search" onClick={this.search} />
+            </div>
+        );
+    }
+}
 
-//     search = (this.state.value) => {
-//       this.props.cbSearch(this.state.value)
-//     }
-
-
-//   }
-//   render() {
-//     return (
-//       <div className="searchBar__container">
-//         <input className="searchBar__input" type="text" defaultValue={this.state.value} onChange={this.changeInputValue} placeholder="Search..." />
-//         <input type="button" value="Search" onClick={this.search} />
-//       </div>
-//     );
-//   }
-// }
-
-// // SearchBar.propTypes = {
-// //   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-// //   onClick: PropTypes.func,
-// // };
-
-// export default SearchBar;
+export default SearchBar;

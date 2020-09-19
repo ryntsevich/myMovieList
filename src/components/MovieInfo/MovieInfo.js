@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './MovieInfo.css';
 import isoFetch from 'isomorphic-fetch';
 import Button from '../Button/Button';
+import Spinner from '../Spinner/Spinner';
 
 class MovieInfo extends React.Component {
 
@@ -87,7 +88,8 @@ class MovieInfo extends React.Component {
     render() {
 
         if (!this.props.loading)
-            return "загрузка данных...";
+            // return "загрузка данных...";
+            return <Spinner />
 
         let movieInfo = this.props.movie[0];
 

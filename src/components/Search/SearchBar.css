@@ -24,18 +24,14 @@
   outline: none;
   box-shadow: 0 0 0 2px rgba(0, 91, 128, 0.773);
 }
-.Spinner {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.HomeLink,
-.Homelink {
-  position: absolute;
-  left: 20px;
-  text-decoration: none;
-  color: rgb(69, 86, 243);
-  font-weight: 600;
+.searchBar__button {
+  font-size: 14px;
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(0, 91, 128, 0.773);
+  color: white;
+  border: none;
 }
