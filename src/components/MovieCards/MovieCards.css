@@ -9,7 +9,19 @@
     margin-bottom: 30px;
   }
 
-  .selectedTab {
+  .pagination__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    
+  }
+
+  .pagination__container > .selectedTab,
+  .pagination__container > .tab {
+    text-decoration: none;
+  }
+
+  .pagination__container > .selectedTab {
     padding: 10px;
     /* border: 2px solid rgb(134, 126, 126); */
     font-weight: bold;
@@ -17,10 +29,7 @@
     color: white;
   }
 
-  .pagination__container {
-    display: flex;
-    flex-wrap: wrap;
-  }
+
 
   .pagination__container > .tab {
     padding: 10px;

@@ -7,7 +7,7 @@ const initState = {
   // filtredMovies: movies,
   pageSize: 4,
   totalMovieCount: 12,
-  currentPage: null,
+  currentPage: 0,
   title: null,
   search: ''
 }

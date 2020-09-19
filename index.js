@@ -9,7 +9,6 @@ import { BrowserRouter } from 'react-router-dom';
 
 
 import './index.css';
-// , applyMiddleware(thunk)
 let store = createStore(combinedReducer);
 
 ReactDOM.render(

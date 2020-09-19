@@ -6,6 +6,7 @@ import MovieCardsC from '../../containers/MovieCards/MovieCardsC';
 import MovieC from '../../containers/Movie/MovieC';
 import CollecttionPage from '../../pages/CollectionPage';
 import Profile from '../../components/Profile/Profile';
+import PagesLinks from '../../pages/PagesLinks';
 
 class App extends React.Component {
 
@@ -13,16 +14,13 @@ class App extends React.Component {
 
     return (
       <div>
-        <h1>My Movie</h1>
-        <NavLink to='/collection'> <div>My collection</div> </NavLink>
+        <h1>My Movies</h1>
+        <PagesLinks />
         <Switch>
           <Route path='/' exact component={MainPage} />
-          <Route path='/movies' component={MainPage} />
-          {/* <Route path='/movies?page=2' exact component={MainPage} /> */}
-          {/* <Route path='/movies/:pageId' component={MovieCardsC} /> */}
-          {/* <Route path='/movie' component={MovieC} /> */}
+          <Route path='/movies/:movieId' component={MovieC} />
+          <Route path='/movies' exact component={MainPage} />
           <Route path='/collection' component={CollecttionPage} />
-          <Route path='/movie/:movieId' component={MovieC} />
         </Switch>
       </div>
     );

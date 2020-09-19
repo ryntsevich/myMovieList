@@ -8,7 +8,7 @@ const MovieCard = props => {
     const { title, genre, poster, id } = props.movie;
 
     return (
-        <Link to={`${'/movie/:movieId'.replace(/\:movieId/, id)}`} >
+        <Link to={`${'/movies/:movieId'.replace(/\:movieId/, id)}`} >
             <div className="movieCard__container"
                 style={{ backgroundImage: `url(${poster})` }}
             >

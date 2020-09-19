@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import MovieCard from '../MovieCards/MovieCard/MovieCard';
+// import MovieCard from '../MovieCards/MovieCard/MovieCard';
 import isoFetch from 'isomorphic-fetch';
 import { Link, NavLink } from 'react-router-dom';
 
 
-import './MovieCards.css';
-import Spinner from '../Spinner/Spinner';
+// import Spinner from '../Spinner/Spinner';
+import MovieCards from '../../components/MovieCards/MovieCards';
 
 class MovieCardsAPIC extends React.Component {
 
@@ -18,7 +18,8 @@ class MovieCardsAPIC extends React.Component {
         // console.log(this.props.currentPage);
         let localPage = localStorage.getItem('currentPage');
         // console.log(this.state.currentP);
-        localPage == 0 ? this.getMovies() : this.onPageChaged(localPage);
+        localPage == 0 ? this.getMovies() : this.onPageChanged(localPage);
+        // this.getMovies()
 
     }
 
@@ -48,7 +49,7 @@ class MovieCardsAPIC extends React.Component {
             ;
     }
 
-    onPageChaged = (pageNumber) => {
+    onPageChanged = (pageNumber) => {
         this.props.setCurrentPage(pageNumber);
         localStorage.setItem('currentPage', pageNumber);
         // console.log(this.props.currentPage)
@@ -74,39 +75,15 @@ class MovieCardsAPIC extends React.Component {
 
     render() {
 
-        console.log(this.props)
-
-        let cards=<Spinner />;
-
-        if (this.props.movies) {
-            cards = this.props.movies.map((m) => (
-                <MovieCard movie={m} key={m.id} />
-            ));
-        }
-
-        let pagesCount = Math.ceil(this.props.totatMovieCount / this.props.pageSize);
-
-        let pages = [];
-        for (let i = 1; i <= pagesCount; i++) {
-            pages.push(i);
-        }
-
-        let localPage = localStorage.getItem('currentPage');
-
-
         return (
-            <div>
-                <div className="pagination__container">
-                    <NavLink to="/movies" className={localPage == 0 ? "selectedTab" : "tab"} onClick={() => this.getMovies()}>All</NavLink>
-                    {pages.map((p, i) => {
-                        return <NavLink to={`/movies?page=${p}`} key={i} className={(this.props.currentPage === p || localPage == p) ? "selectedTab" : "tab"} onClick={() => { this.props.currentPage != p && this.onPageChaged(p) }}>{p}</NavLink>
-                    })}
 
-                </div>
-                <div className="movieCards__container" >
-                    {cards}
-                </div>
-            </div>
+            <MovieCards
+                movies={this.props.movies}
+                totatMovieCount={this.props.totatMovieCount}
+                pageSize={this.props.pageSize}
+                currentPage={this.props.currentPage}
+                cbOnPageChanged={this.onPageChanged}
+                cbGetMovies={this.getMovies} />
         );
     }
 };
