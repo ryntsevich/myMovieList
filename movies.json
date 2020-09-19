@@ -11,7 +11,7 @@
       "isFavourite": false,
       "overview": "Battle-hardened O’Hara leads a lively mercenary team of soldiers on a daring mission: rescue hostages from their captors in remote Africa. But as the mission goes awry and the team is stranded, O’Hara’s squad must face a bloody, brutal encounter with a gang of rebels.",
       "isFuture": true,
-      "isPast": true
+      "isPast": false
     },
     {
       "id": 2,
@@ -21,10 +21,10 @@
       "tagline": "Let's get down to business, to defeat the Huns",
       "genre": "Drama / Action / War / Fantasy / Adventure",
       "year": 2020,
-      "isPast": true,
+      "isPast": false,
       "isFavourite": false,
       "overview": "When the Emperor of China issues a decree that one man per family must serve in the Imperial Chinese Army to defend the country from Huns, Hua Mulan, the eldest daughter of an honored warrior, steps in to take the place of her ailing father. She is spirited, determined and quick on her feet. Disguised as a man by the name of Hua Jun, she is tested every step of the way and must harness her innermost strength and embrace her true potential.",
-      "isFuture": false
+      "isFuture": true
     },
     {
       "id": 3,
@@ -60,10 +60,10 @@
       "tagline": "Why So Serious?",
       "genre": "Drama / Action / Crime / Thriller",
       "year": 2008,
-      "isPast": false,
-      "isFavourite": true,
+      "isPast": true,
+      "isFavourite": false,
       "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
-      "isFuture": true
+      "isFuture": false
     },
     {
       "id": 6,
@@ -74,7 +74,7 @@
       "genre": "Action / Thriller",
       "year": 2014,
       "isPast": false,
-      "isFavourite": false,
+      "isFavourite": true,
       "overview": "Ex-hitman John Wick comes out of retirement to track down the gangsters that took everything from him."
     },
     {
@@ -87,7 +87,8 @@
       "year": 2020,
       "isPast": false,
       "isFavourite": false,
-      "overview": "The work of billionaire tech CEO Donovan Chalmers is so valuable that he hires mercenaries to protect it, and a terrorist group kidnaps his daughter just to get it."
+      "overview": "The work of billionaire tech CEO Donovan Chalmers is so valuable that he hires mercenaries to protect it, and a terrorist group kidnaps his daughter just to get it.",
+      "isFuture": true
     },
     {
       "id": 8,
@@ -97,8 +98,8 @@
       "tagline": "Time is the enemy",
       "genre": "War / Drama / Action / History",
       "year": 2020,
-      "isPast": false,
-      "isFavourite": false,
+      "isPast": true,
+      "isFavourite": true,
       "overview": "At the height of the First World War, two young British soldiers must cross enemy territory and deliver a message that will stop a deadly attack on hundreds of soldiers."
     },
     {
@@ -109,7 +110,7 @@
       "tagline": "Choose Wisely.",
       "genre": "Adventure / Fantasy / Romance / Family",
       "year": 2019,
-      "isPast": true,
+      "isPast": false,
       "isFavourite": false,
       "overview": "A kindhearted street urchin named Aladdin embarks on a magical adventure after finding a lamp that releases a wisecracking genie while a power-hungry Grand Vizier vies for the same lamp that has the power to make their deepest wishes come true."
     },
@@ -123,7 +124,8 @@
       "year": 2018,
       "isPast": false,
       "isFavourite": false,
-      "overview": "Elastigirl springs into action to save the day, while Mr. Incredible faces his greatest challenge yet – taking care of the problems of his three children."
+      "overview": "Elastigirl springs into action to save the day, while Mr. Incredible faces his greatest challenge yet – taking care of the problems of his three children.",
+      "isFuture": true
     },
     {
       "id": 11,
@@ -133,9 +135,10 @@
       "tagline": "Power. Grace. Wisdom. Wonder.",
       "genre": "Action / Adventure / Fantasy",
       "year": 2017,
-      "isPast": true,
+      "isPast": false,
       "isFavourite": false,
-      "overview": "An Amazon princess comes to the world of Man in the grips of the First World War to confront the forces of evil and bring an end to human conflict."
+      "overview": "An Amazon princess comes to the world of Man in the grips of the First World War to confront the forces of evil and bring an end to human conflict.",
+      "isFuture": true
     },
     {
       "id": 12,
@@ -145,7 +148,7 @@
       "tagline": "Criminal. Class.",
       "genre": "Action / Crime / Comedy",
       "year": 2020,
-      "isPast": false,
+      "isPast": true,
       "isFavourite": false,
       "overview": "American expat Mickey Pearson has built a highly profitable marijuana empire in London. When word gets out that he’s looking to cash out of the business forever it triggers plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him.",
       "isFuture": false

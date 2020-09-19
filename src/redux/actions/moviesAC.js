@@ -41,6 +41,12 @@ export const setCurrentPageAC = (currentPage) => {
   };
 };
 
+export const setCurrentTitleAC = (title) => {
+  return {
+    type: actionTypes.SET_TITLE,
+    title: title
+  };
+};
 
 
 

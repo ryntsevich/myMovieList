@@ -1,0 +1,20 @@
+.btn {
+    width: 32%;
+    height: 30px;
+    font-size: 14px;
+    background-color: rgba(0, 91, 128, 0.773);
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none; 
+  }
+
+ .btn:hover {
+    background-color: rgba(11, 51, 66, 0.773);
+
+  }
+ 
+  .selected {
+    background-color: rgb(236 53 21 / 74%);
+
+  }

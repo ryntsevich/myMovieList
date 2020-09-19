@@ -6,11 +6,32 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    padding-top: 60px;
+    padding-top:30px;
   }
   
   .collection__container > * {
     margin-bottom: 30px;
   }
 
-  
+  /* .buttonsCollection__container > .btn {
+    width: 32%;
+    height: 30px;
+    font-size: 14px;
+    background-color: rgba(0, 91, 128, 0.773);
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none; 
+  }
+
+  .buttonsCollection__container > .btn:hover {
+    background-color: rgba(11, 51, 66, 0.773);
+
+  }
+ 
+  .buttonsCollection__container > .selected {
+    background-color: rgb(236 53 21 / 74%);
+
+  } */
+
+

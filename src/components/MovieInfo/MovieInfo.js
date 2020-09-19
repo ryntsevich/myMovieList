@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './MovieInfo.css';
 import isoFetch from 'isomorphic-fetch';
+import Button from '../Button/Button';
 
 class MovieInfo extends React.Component {
 

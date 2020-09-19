@@ -5,22 +5,8 @@ import MovieInfo from '../../components/MovieInfo/MovieInfo';
 import { setMoviesAC, setCurrentTitleAC } from '../../redux/actions/moviesAC';
 import Profile from '../../components/Profile/Profile'
 import Collection from '../../components/Collection/Collection';
+import Button from '../../components/Button/Button'
 
-
-// const CollectionC = () => {
-//     return (
-//         <Profile />
-//     )
-// }
-
-
-// class CollectionC extends React.Component {
-//     render() {
-//         return (
-//             <Profile />
-//         );
-//     }
-// }
 
 const mapStateToProps = (state) => {
 
@@ -30,7 +16,6 @@ const mapStateToProps = (state) => {
         totatMovieCount: state.moviesR.totalMovieCount,
         currentPage: state.moviesR.currentPage,
         title: state.moviesR.title
-
     };
 };
 
@@ -44,6 +29,6 @@ const mapDispatchToProps = (dispatch) => {
         }
     }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(Collection);
+export default connect(mapStateToProps, mapDispatchToProps)(Button);
 
 // export default CollectionC;

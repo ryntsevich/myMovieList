@@ -4,17 +4,22 @@ import isoFetch from 'isomorphic-fetch';
 import MovieCard from '../MovieCards/MovieCard/MovieCard'
 
 import './Collection.css';
+import Button from '../Button/Button';
+import ButtonC from '../../containers/Button/ButtonC';
 
 
 
 class Collection extends React.Component {
 
-    componentDidMount() {
-
-        this.getMoviesCollection('isFavourite');
+    state = {
+        selectedId: 0,
+        currentValue: null
 
     }
 
+    componentDidMount() {
+        this.getMoviesCollection('isFuture');
+    }
 
     getMoviesCollection = (status) => {
 
@@ -42,6 +47,16 @@ class Collection extends React.Component {
         console.error(errorMessage);
     }
 
+    selectedButton = (id, value) => {
+        this.setState({ selectedId: id });
+        // this.setState({ currentValue: id});
+        // console.log(this.state.selectedId)
+        // console.log(this.state.currentValue)
+        // console.log(this.props)
+
+        // this.state.selectedId == 1 && this.getMoviesCollection('isPast')
+    }
+
     render() {
 
         let cards;
@@ -52,12 +67,14 @@ class Collection extends React.Component {
             ));
         }
 
+        let buttons = ["Going to", "Watched", "Favourite"];
+        // let ref = null;
+
+
         return (
             <div className="allCollection__container">
                 <div className="buttonsCollection__container">
-                    <button className="btn" onClick={() => this.getMoviesCollection("isFuture")}>Going to</button>
-                    <button className="btn" onClick={() => this.getMoviesCollection("isPast")}>Watched</button>
-                    <button className="btn" onClick={() => this.getMoviesCollection("isFavourite")}>Favourite</button>
+                    {buttons.map((m, i) => <ButtonC title2={m} key={i} id={i} selectedId={this.state.selectedId} cbSelected={this.selectedButton} ></ButtonC>)}
                 </div>
 
                 <div className="collection__container">

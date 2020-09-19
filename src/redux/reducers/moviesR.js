@@ -7,7 +7,8 @@ const initState = {
   // filtredMovies: movies,
   pageSize: 4,
   totalMovieCount: 12,
-  currentPage: null
+  currentPage: null,
+  title: null
 }
 
 const moviesReducer = (state = initState, action) => {
@@ -17,6 +18,9 @@ const moviesReducer = (state = initState, action) => {
     }
     case actionTypes.SET_CURRENT_PAGE: {
       return { ...state, currentPage: action.currentPage }
+    }
+    case actionTypes.SET_TITLE: {
+      return { ...state, title: action.title }
     }
 //     case actionTypes.CHANGE_ISFAVOURITE: {
 // return {

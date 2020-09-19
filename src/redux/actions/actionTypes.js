@@ -2,6 +2,7 @@
 export const MOVIES_SET = 'MOVIES_SET';
 export const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
 export const SEARCH_MOVIES ='SEARCH_MOVIES';
+export const SET_TITLE ='SET_TITLE';
 /** MOVIES [END] */
 
 /** MOVIE [START] */
